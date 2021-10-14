@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://Tao.Wang3@localhost:6000/mnt/WXRC0020/users/Tao.Wang3/anaconda3/envs/solo_mmdet_lvis/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/mnt/WXRC0020/users/Tao.Wang3/prj/detr" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@ssh://Tao.Wang3@WXRG0333:22/mnt/WXRC0020/users/Tao.Wang3/anaconda3/envs/detr/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/mnt/WXRC0020/users/Tao.Wang3/prj/detr" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@sftp://Tao.Wang3@WXRG0334:22/mnt/WXRC0020/users/Tao.Wang3/anaconda3/envs/detr_torch1.6/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/mnt/WXRC0020/users/Tao.Wang3/prj/detr" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@sftp://Tao.Wang3@WXRG0334:22/mnt/WXRC0020/users/Tao.Wang3/anaconda3/envs/detr/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/mnt/WXRC0020/users/Tao.Wang3/prj/detr" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
