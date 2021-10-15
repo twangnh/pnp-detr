@@ -69,6 +69,12 @@ Train baseline DETR-6-6 model on 4 nodes for 300 epochs:
 python run_with_submitit.py --timeout 3000 --coco_path /path/to/coco
 ```
 
-# License
-DETR is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
+# Cite
+@inproceedings{wang2021pnp,
+  title={PnP-DETR: Towards Efficient Visual Analysis with Transformers},
+  author={Wang, Tao and Yuan, Li and Chen, Yunpeng and Feng, Jiashi and Yan, Shuicheng},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={4661--4670},
+  year={2021}
+}
 
