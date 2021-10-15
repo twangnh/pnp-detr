@@ -41,10 +41,11 @@ path/to/coco/
 ```
 
 ## Training
-To train baseline DETR on a single node with 8 gpus for 300 epochs run:
+To train PnP-DETR on a single node with 8 gpus for 300 epochs run:
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --use_env main.py --coco_path /path/to/coco 
 ```
+you can adjust the range of random poll ratio with --sample_ratio_lower_bound and --sample_ratio_higher_bound
 
 Following DETR, We train PnP-DETR with AdamW setting learning rate in the transformer to 1e-4 and 1e-5 in the backbone.
 Horizontal flips, scales an crops are used for augmentation.
@@ -55,7 +56,7 @@ The transformer is trained with dropout of 0.1, and the whole model is trained w
 ## Evaluation
 To evaluate DETR R50 on COCO val5k with a single GPU run:
 ```
-python main.py --batch_size 2 --no_aux_loss --eval --resume xxx --coco_path /path/to/coco
+python main.py --batch_size 2 --no_aux_loss --eval --resume xxx --coco_path /path/to/coco --sample_topk_ratio xxx
 ```
 
 ## Multinode training
