@@ -69,7 +69,10 @@ Train baseline DETR-6-6 model on 4 nodes for 300 epochs:
 python run_with_submitit.py --timeout 3000 --coco_path /path/to/coco
 ```
 
-# Cite
+## Cite
+Please consider to cite our paper:
+
+```
 @inproceedings{wang2021pnp,
   title={PnP-DETR: Towards Efficient Visual Analysis with Transformers},
   author={Wang, Tao and Yuan, Li and Chen, Yunpeng and Feng, Jiashi and Yan, Shuicheng},
@@ -77,4 +80,4 @@ python run_with_submitit.py --timeout 3000 --coco_path /path/to/coco
   pages={4661--4670},
   year={2021}
 }
-
+```
