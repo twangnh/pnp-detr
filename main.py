@@ -123,7 +123,7 @@ def get_args_parser():
     parser.add_argument('--notload_lr_scheduler', action='store_true',
                         help="notload_lr_scheduler")
     parser.add_argument('--sample_ratio_lower_bound', default=1/3., type=float)
-    parser.add_argument('--sample_ratio_higher_bound', default=0.5, type=float)
+    parser.add_argument('--sample_ratio_higher_bound', default=0.8, type=float)
 
     return parser
 
@@ -241,7 +241,7 @@ def main(args):
 
     if args.eval:
         test_stats, coco_evaluator = evaluate(model, criterion, postprocessors,
-                                              data_loader_val, base_ds, device, args.output_dir)
+                                              data_loader_val, base_ds, device, args.output_dir, args.sample_topk_ratio)
         if args.output_dir:
             utils.save_on_master(coco_evaluator.coco_eval["bbox"].eval, output_dir / "eval.pth")
         return
